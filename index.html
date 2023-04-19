@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emoção em mãos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+  
+    <center>
+    <h3 class="btn btn-warning heading">App web de gestos com as mãos<!--btn ele remove a configuração padrão do botão e adiciona um preenchimento,btn-warning esse código adiciona a cor laranja claro, o código heading é o nome da classe -->
+    <br>
+    
+    </h3>
+      <br><br>
+       
+      <p style="font-size: 22px;">Tire sua selfie de um gesto para descobrir qual é
+      	
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Visualização Da webcam:</label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="takeSnapshot();" class="btn btn-warning">Capturar Imagem</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Previsão 1: </label>
+        <p class="handName" id="resultHandName"></p>
+        <p class="hand" id="updateHand"></p>
+
+        <label> Previsão 2:</label>
+        <p class="handName" id="resultHandName"></p>
+        <p class="emoji" id="updateHand2"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12"> <!--é uma classe do bootstrap-->
+	      <label>Foto:</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Prever Mão</button>
+      </div>
+    </center>
+
+  </div>
+  <script>
+    console.log("😎Oi! Você é legal por achar isso receba sua recompensa  https://www.youtube.com/watch?v=4R6woWfjC3I 😎")
+  </script>
+<script src="main.js"></script>
+    </body>
+</html>
